@@ -31,6 +31,8 @@ public class Program {
 				
 			}
 			
+			// Email de pessoas com o salário maior que o fornecido
+			
 			System.out.print("Digite o salário: ");
 			double salario = sc.nextDouble();
 			
@@ -42,6 +44,8 @@ public class Program {
 			
 			System.out.println("Email de pessoas com o salário maior que " + String.format("%.2f", salario) + ":");
 			emails.forEach(System.out::println);
+			
+			// Soma do salário de pessoa com o nome começado com 'M'
 			
 			double sum = list.stream()
 					.filter(x -> x.getName().charAt(0) == 'M')
